@@ -25,82 +25,92 @@ public class Main {
             int option = reader.nextInt();
 
             switch (option) {
-                case 1: createUser();
-                case 2: changePin();
-                case 3: transfer();
-                case 4: deposit();
-                case 5: quit();
+                case 1:
+                    createUser(reader);
+                    break;
+                case 2:
+                    changePin(reader);
+                    break;
+                case 3:
+                    transfer(reader);
+                    break;
+                case 4:
+                    deposit(reader);
+                    break;
+                case 5:
+                    break;
 
             }
         }
+    }
 
-        //call-operation to createUserInputOutput
-        //call-operation to create new user
+    //call-operation to createUserInputOutput
+    //call-operation to create new user
 
-        //call-operation to changePinInputOutput
-        //call-operation to change pin
+    //call-operation to changePinInputOutput
+    //call-operation to change pin
 
-        //call-operation to transferInputOutput
-        //call-operation to make transfer
+    //call-operation to transferInputOutput
+    //call-operation to make transfer
 
-        //call-operation to depositInputOutput
-        //call-operation to deposit, to charge, to add some money to the card
+    //call-operation to depositInputOutput
+    //call-operation to deposit, to charge, to add some money to the card
 
-        public static void createUser() {
-            createUserInputOutput();
-        }
+    public static void createUser(Scanner reader) {
+        createUserInputOutput(reader);
+    }
 
-        public static void changePin() {
-            changePinInputOutput();
-        }
+    public static void changePin(Scanner reader) {
+        changePinInputOutput(reader);
+    }
 
-        public static void transfer() {
-            transferInputOutput();
-        }
+    public static void transfer(Scanner reader) {
+        transferInputOutput(reader);
+    }
 
-        public static void deposit() {
-            depositInputOutput();
-        }
+    public static void deposit(Scanner reader) {
+        depositInputOutput(reader);
+    }
 
-        public static void createUserInputOutput() {
-            System.out.println("What is the user name");
-            String name = reader.nextLine();
-            System.out.println("Whats is your surname");
-            String surname = reader.nextLine();
-            System.out.println("What is your age");
-            int age = reader.nextInt();
-            System.out.println("What is your card number");
-            int cardNumber = reader.nextInt();
-            System.out.println("What is the pin number");
-            int pinNumber = reader.nextInt();
-        }
+    public static void createUserInputOutput(Scanner reader) {
+        System.out.println("What is the user name");
+        String name = reader.nextLine();
+        System.out.println("Whats is your surname");
+        String surname = reader.nextLine();
+        System.out.println("What is your age");
+        int age = reader.nextInt();
+        System.out.println("What is your card number");
+        int cardNumber = reader.nextInt();
+        System.out.println("What is the pin number");
+        int pinNumber = reader.nextInt();
+    }
 
-        public static void changePinInputOutput() {
-            System.out.println("What is the card number");
-            String number = reader.nextLine();
-            System.out.println("Whats is your actual pin");
-            int pinCard = reader.nextInt();
-            System.out.println("What is your new pin");
-            int newPin = reader.nextInt();
-        }
+    public static void changePinInputOutput(Scanner reader) {
+        System.out.println("What is the card number");
+        String number = reader.nextLine();
+        System.out.println("Whats is your actual pin");
+        int pinCard = reader.nextInt();
+        System.out.println("What is your new pin");
+        int newPin = reader.nextInt();
+    }
 
-        public static void transferInputOutput() {
-            System.out.println("What is the source card number");
-            String number = reader.nextLine();
-            System.out.println("Whats is the source card pin");
-            int pin = reader.nextInt();
-            System.out.println("What is the target card number");
-            String targetCard = reader.nextLine();
+    public static void transferInputOutput(Scanner reader) {
+        System.out.println("What is the source card number");
+        String number = reader.nextLine();
+        System.out.println("Whats is the source card pin");
+        int pin = reader.nextInt();
+        System.out.println("What is the target card number");
+        String targetCard = reader.nextLine();
 
-        }
+    }
 
-        public static void depositInputOutput() {
-            System.out.println("What is the card number");
-            String number = reader.nextLine();
-            System.out.println("What is the amount to deposit");
-            int amount = reader.nextInt();
+    public static void depositInputOutput(Scanner reader) {
+        System.out.println("What is the card number");
+        String number = reader.nextLine();
+        System.out.println("What is the amount to deposit");
+        int amount = reader.nextInt();
 
-        }
     }
 }
+
 
