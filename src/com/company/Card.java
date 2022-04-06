@@ -7,6 +7,16 @@ public class Card {
     String type;
     int pin;
 
+    public Card() {
+    }
+
+    public Card(int number, double amount, String type, int pin) {
+        this.number = number;
+        this.amount = amount;
+        this.type = type;
+        this.pin = 1234;
+    }
+
     public int getNumber() {
         return number;
     }
@@ -39,6 +49,13 @@ public class Card {
         this.pin = pin;
     }
 
-
-
+    @Override
+    public String toString() {
+        return "Card{" +
+                "number=" + number +
+                ", amount=" + amount +
+                ", type='" + type + '\'' +
+                ", pin=" + pin +
+                '}';
+    }
 }
