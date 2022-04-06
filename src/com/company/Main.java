@@ -14,10 +14,17 @@ public class Main {
         while(true){
 
             //print mini-menu with 4 options
+            
             //call-operation to createUserInputOutput
             //call-operation to create new user
+
+            //call-operation to changePinInputOutput
             //call-operation to change pin
+
+            //call-operation to transferInputOutput
             //call-operation to make transfer
+
+            //call-operation to depositInputOutput
             //call-operation to deposit, to charge, to add some money to the card
         }
 
@@ -41,6 +48,17 @@ public class Main {
 
         }
 
+        public static void changePinInputOutput(){
+
+        }
+
+        public static void transferInputOutput(){
+
+        }
+
+        public static void depositInputOutput(){
+
+        }
 
     }
 }
