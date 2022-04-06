@@ -14,6 +14,7 @@ public class Main {
         while(true){
 
             //print mini-menu with 4 options
+            //call-operation to createUserInputOutput
             //call-operation to create new user
             //call-operation to change pin
             //call-operation to make transfer
@@ -33,6 +34,10 @@ public class Main {
         }
 
         public static void deposit(){
+
+        }
+
+        public static void createUserInputOutput(){
 
         }
 
