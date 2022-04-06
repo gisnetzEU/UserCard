@@ -4,6 +4,8 @@ import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import static java.lang.System.exit;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -38,7 +40,7 @@ public class Main {
                     deposit(reader);
                     break;
                 case 5:
-                    break;
+                    quit();
 
             }
         }
@@ -55,6 +57,11 @@ public class Main {
 
     //call-operation to depositInputOutput
     //call-operation to deposit, to charge, to add some money to the card
+
+    public static void quit() {
+        System.out.println("Bye!");
+        System.exit(0);
+    }
 
     public static void createUser(Scanner reader) {
         createUserInputOutput(reader);
@@ -87,7 +94,7 @@ public class Main {
 
     public static void changePinInputOutput(Scanner reader) {
         System.out.println("What is the card number");
-        String number = reader.nextLine();
+        String cardNumber = reader.nextLine();
         System.out.println("Whats is your actual pin");
         int pinCard = reader.nextInt();
         System.out.println("What is your new pin");
@@ -96,9 +103,9 @@ public class Main {
 
     public static void transferInputOutput(Scanner reader) {
         System.out.println("What is the source card number");
-        String number = reader.nextLine();
+        String cardNumber = reader.nextLine();
         System.out.println("Whats is the source card pin");
-        int pin = reader.nextInt();
+        int pinNumber = reader.nextInt();
         System.out.println("What is the target card number");
         String targetCard = reader.nextLine();
 
@@ -106,7 +113,7 @@ public class Main {
 
     public static void depositInputOutput(Scanner reader) {
         System.out.println("What is the card number");
-        String number = reader.nextLine();
+        String CardNumber = reader.nextLine();
         System.out.println("What is the amount to deposit");
         int amount = reader.nextInt();
 
